@@ -64,7 +64,6 @@ height: 25px;
     width: 27px; 
     height: 27px;
     align-items:center;
-
 }
 
 /* list items */
@@ -317,18 +316,16 @@ padding: 8px;
 }
 
 .home-right-down-up-one{
+    position: relative;
     display:flex;
     justify-content: space-between;
-    width: 1093;
-height: 81;
-border:3px solid #2a2a2a;
-opacity: 1;
-border-width: 1px;
-border-top-left-radius: 22px;
-border-top-right-radius: 22px;
-border-bottom-right-radius: 8px;
-border-bottom-left-radius: 3px;
-border: 1px solid rgba(212, 212, 253, 1)
+    opacity: 1;
+    border-width: 1px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid rgba(212, 212, 253, 1)
 }
 /* .home-right-down-middle{
     width: 1093;
@@ -341,13 +338,42 @@ border-bottom-right-radius: 22px;
 border-bottom-left-radius: 22px;
 border: 1px solid rgba(212, 212, 253, 1);
 background: rgba(255, 255, 255, 1); } */
+.home-right-down-up-one button{
+height: 34px;
+padding-top: 5px;
+padding-right: 13px;
+padding-bottom: 5px;
+padding-left: 13px;
+margin: 9px ;
+gap: 10px;
+opacity: 1;
+border-radius: 8px;
+background: var(--500, rgba(14, 47, 215, 1));
+font-family: Noto Sans Bengali;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: var(--50, rgba(249, 250, 251, 1));
+width: 99;
+height: 24;
+opacity: 1;
 
+
+
+
+
+
+}
 .home-right-down-up-last{
+    position: absolute;
+    top: 85px;
     display: flex;
     background: linear-gradient(92.85deg, rgba(123, 197, 245, 0.1) 0%, rgba(120, 127, 246, 0.1) 101.91%);
-    width: 1093;
-    height: 51;
-    top: 119px;
+    width: 1093px;
     gap: 10px;
     opacity: 1;
     border-radius: 23px;
@@ -361,7 +387,7 @@ background: rgba(255, 255, 255, 1); } */
     display: flex;
     justify-content: space-between;
 }
-.card-blue{
+/* .card-blue{
     width: 290px;
     height: 169px;
     opacity: 1;
@@ -371,17 +397,34 @@ background: rgba(255, 255, 255, 1); } */
     margin:20px 0px;
     padding: 20px;
     border: 1px solid var(--300, rgba(209, 213, 219, 1));
-  /* background-image: url('/card/blue-card.png');
-   background-repeat: no-repeat;
-   background-size: 100% 100%; */
    background: #235094;
    background: linear-gradient(90deg,
    rgba(35, 80, 148, 0.93) 0%,
     rgba(102, 112, 173, 1) 52%,
      rgb(208, 213, 229) 100%);
+} */
+/* .card{
+    
+} */
+.card-blue{
+position: relative;
+overflow: hidden;
+width: 310px;
+height: 169px;
+justify-content: center;
+margin:20px 0px;
+padding: 20px;
+opacity: 1;
+border-width: 1px;
+border-radius: 22px;
+background: rgba(255, 255, 255, 1);
+border: 1px solid var(--300, rgba(209, 213, 219, 1));
 }
+
+
 .card-red{
-    width: 290px;
+    position:relative;
+    width: 310px;
     height: 169px;
     opacity: 1;
     border-width: 1px;
@@ -397,7 +440,8 @@ background: rgba(255, 255, 255, 1); } */
     rgb(208, 213, 229) 100%);
 }
 .card-purple{
-    width: 290px;
+    position:relative;
+    width: 310px;
     height: 169px;
     opacity: 1;
     border-width: 1px;
@@ -418,3 +462,74 @@ background: rgba(255, 255, 255, 1); } */
     flex-direction: column;
 }
 
+.card-blue .icon{
+    position:  absolute;
+    top: 22px;
+    left: 20px;
+    right: 279px;
+    bottom: 103px;
+}
+
+.card-blue .card-btn{
+    position: absolute;
+    top: 26px;
+    left: 281px;
+    right: 32px;
+    bottom: 129px;
+}
+.card-blue h3{
+    position: absolute;
+    top: 51px;
+    bottom: 50px;
+}
+.card-blue p{
+    position: absolute;
+    top: 103px;
+    bottom: 26px;
+    left:20px;
+    right: 20px;
+}
+.circle-shaped{
+    position:absolute;
+    width: 89px;
+     height: 89px;
+     background: rgba(79, 110, 247, 1);
+     filter: blur(56.5px);
+     border-radius: 50%; 
+     top: -17px;
+     left: -19px;
+}
+.second-circle-shaped{
+    position: absolute;
+    width: 36.350665884739605px;
+    height: 82.99999963146625px;
+    top: -41px;
+    left: 141px;
+    opacity: 1;
+    background: rgba(79, 110, 247, 1);
+    filter: blur(56.5px);
+    transform: rotate(-30.26deg); 
+}
+.third-circle-shaped{
+    position: absolute;
+    filter: blur(56.5px);
+    background: rgba(79, 110, 247, 1);
+    width: 89px;
+    height: 89px;
+    top: -38px;
+    left: 283px;
+    opacity: 1;
+    border-radius: 50% ;
+}
+.fourth-circle-shaped{
+    position: absolute;
+    width: 36.350665884739605px;
+    height: 82.99999963146625px;
+    top: -39px;
+    left: 84px;
+    transform: rotate(30.26 deg);
+    opacity: 1;
+    background: rgba(79, 110, 247, 1);
+    filter: blur(56.5px);
+    border-radius: 50%;
+}
