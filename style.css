@@ -151,7 +151,23 @@ height: 25px;
     display:flex;
     width: 1650px;
 }
-
+.navbar p{
+    width: 300px;
+    height: 32px;
+    font-family: Baloo Da 2;
+font-style: SemiBold;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: var(--800, rgba(31, 41, 55, 1));
+}
+.navbar .icons{
+    display: flex;      
+    align-items: center; 
+    gap: 10px;
+}
 .navbar{
     display: flex;
     position: fixed;
@@ -160,6 +176,9 @@ height: 25px;
 }
 .navbar img{
     align-items: flex-end;
+    width: 40px;         
+    text-align: center;
+    height: 40px;
 }
 .home{
     display:flex;
@@ -171,7 +190,8 @@ height: 25px;
     flex-direction: column;
     margin: 40px 0 0;
     background: var(--100, rgba(243, 244, 246, 1));
-   width: 269.1748962402344 px;
+   width: 269.px;
+   height: 980px;
     gap: 20px;
     opacity: 1;
     border-radius: 16px;
@@ -179,16 +199,15 @@ height: 25px;
 }
 
 .chat-history{
-    gap:10px;
+    gap:5px;
 }
 
-.search-box {
+.searchbox input {
     align-items: center;
     color: rgba(255, 255, 255, 1);
-    width: 237.17489624023438px;
-    height: 41px;
+    width: 230px;
+    height: 38px;
     border-radius: 8px;
-    border-width: 0.74px;
     opacity: 1;
 }
 .buttons{
@@ -235,6 +254,9 @@ background: var(--400, rgba(40, 73, 241, 1));
 
 .chat-history h4{
     color: rgba(52, 64, 84, 1);
+    Size: 14px;
+    height: 20px;
+    margin: -20px 0 20px; 
 
 }
 
@@ -243,7 +265,7 @@ font-family: Noto Sans Bengali;
 font-weight: 100;
 font-style: Thin;
 font-size: 12px;
-line-height: 20px;
+line-height:15px;
 vertical-align: bottom;
 color: var(--colors-text-text-secondary-700, rgba(52, 64, 84, 1));
 
@@ -254,7 +276,7 @@ color: var(--colors-text-text-secondary-700, rgba(52, 64, 84, 1));
 font-weight: 400;
 font-style: Regular;
 font-size: 14px;
-line-height: 140%;
+line-height: 100%;
 vertical-align: bottom;
 color: var(--500, rgba(107, 114, 128, 1));
 padding: 8px;
@@ -314,18 +336,43 @@ padding: 8px;
     padding: 0px 12px;   
     text-align: center;
 }
-
+.home-right-up-down-middle{
+    border-bottom: none;
+}
+.home-right-down-up{
+    border: 1px solid rgba(212, 212, 253, 1);
+    border-radius: 23px;
+}
 .home-right-down-up-one{
-    position: relative;
+    /* position: relative; */
     display:flex;
     justify-content: space-between;
     opacity: 1;
     border-width: 1px;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 3px;
-    border: 1px solid rgba(212, 212, 253, 1)
+    border: 1px solid rgba(212, 212, 253, 1);
+    border: none;
+}
+.home-right-down-up-one button{
+opacity: 1;
+font-family: Noto Sans Bengali;
+font-weight: 400px;
+font-style: Regular;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: var(--50, rgba(249, 250, 251, 1));
+width: 125px;
+height: 34px;
+gap: 10px;
+border-radius: 8px;
+padding-top: 5px;
+padding-right: 13px;
+padding-bottom: 5px;
+padding-left: 13px;
+background: var(--500, rgba(14, 47, 215, 1));
+margin: 8px 14px;
 }
 /* .home-right-down-middle{
     width: 1093;
@@ -338,46 +385,25 @@ border-bottom-right-radius: 22px;
 border-bottom-left-radius: 22px;
 border: 1px solid rgba(212, 212, 253, 1);
 background: rgba(255, 255, 255, 1); } */
-.home-right-down-up-one button{
-height: 34px;
-padding-top: 5px;
-padding-right: 13px;
-padding-bottom: 5px;
-padding-left: 13px;
-margin: 9px ;
-gap: 10px;
-opacity: 1;
-border-radius: 8px;
-background: var(--500, rgba(14, 47, 215, 1));
-font-family: Noto Sans Bengali;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-color: var(--50, rgba(249, 250, 251, 1));
-width: 99;
-height: 24;
-opacity: 1;
+textarea{
+    border-bottom: none;
+    border-left: none;
+    border-top:1px solid rgba(212, 212, 253, 1);
+    border-radius: 23px;
 
-
-
-
-
-
+    
 }
+
 .home-right-down-up-last{
-    position: absolute;
-    top: 85px;
+    top:45px;
     display: flex;
     background: linear-gradient(92.85deg, rgba(123, 197, 245, 0.1) 0%, rgba(120, 127, 246, 0.1) 101.91%);
-    width: 1093px;
+    width: 1097px;
     gap: 10px;
     opacity: 1;
     border-radius: 23px;
     padding: 12px;
+    z-index: 2;
 }
 .home-right-down-down{
   display: flex;
@@ -424,6 +450,7 @@ border: 1px solid var(--300, rgba(209, 213, 219, 1));
 
 .card-red{
     position:relative;
+    overflow:hidden;
     width: 310px;
     height: 169px;
     opacity: 1;
@@ -441,6 +468,7 @@ border: 1px solid var(--300, rgba(209, 213, 219, 1));
 }
 .card-purple{
     position:relative;
+    overflow: hidden;
     width: 310px;
     height: 169px;
     opacity: 1;
@@ -532,4 +560,7 @@ border: 1px solid var(--300, rgba(209, 213, 219, 1));
     background: rgba(79, 110, 247, 1);
     filter: blur(56.5px);
     border-radius: 50%;
+}
+.footer p{
+    margin: -180px 650px 0 ;
 }
